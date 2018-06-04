@@ -1,0 +1,39 @@
+array1 ->0 to len1
+array2 ->0 to len2
+(len1<len2)
+
+i=0
+j=0
+
+mergearray={}
+X:
+if(array1[i]<array2[j])
+	meregarray.add(array1[i])
+	i++(points to next element of array1)
+
+else
+	mergearray.add(array2[j]
+	j++
+
+(one element added, assume from array1)
+(i==1 & j==0)
+JNZ X
+
+{
+	assume array1 runs out i.e i=len1; let j=7<len2-1
+	mergearray contains array1[0..len-1] U array2[0...6]
+	loop breaks
+	try
+	{
+		mergearray.addall(array1, i, len1)    //MUST add nothing
+	}
+
+	try
+	{
+		mergearray.addall(array2, j, len2)    //MUST add array2 elements from j to len2-1
+	}
+	
+(mergearray should contain array1[0..len1-1] and array2[0..len2-1]
+
+}
+
